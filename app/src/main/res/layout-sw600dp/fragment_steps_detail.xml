@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".StepsDetail">
+
+        <FrameLayout
+            android:id="@+id/main_media_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:id="@+id/fragment_player_view">
+
+            </com.google.android.exoplayer2.ui.PlayerView>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/fragment_steps_short_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_media_frame"
+            android:padding="@dimen/default_padding"
+            tools:text="shortDescription"
+            android:textStyle="normal"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/fragment_steps_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_steps_short_description"
+            android:padding="@dimen/default_padding"
+            tools:text="Description"
+            android:textStyle="normal"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+
+</ScrollView>

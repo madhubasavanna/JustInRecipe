@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".StepsDetail">
+
+        <FrameLayout
+            android:id="@+id/main_media_frame"
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:id="@+id/fragment_player_view"
+                app:fastforward_increment="1000"
+                app:rewind_increment="1000">
+
+            </com.google.android.exoplayer2.ui.PlayerView>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/fragment_steps_short_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_media_frame"
+            android:padding="@dimen/default_padding"
+            tools:text="shortDescription"
+            android:textStyle="normal"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/fragment_steps_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_steps_short_description"
+            android:padding="@dimen/default_padding"
+            tools:text="Description"
+            android:textStyle="normal"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_steps_description"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/button_previous"
+            android:text="@string/next_button" />
+
+        <Button
+            android:id="@+id/button_previous"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_steps_description"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/prev_button" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+

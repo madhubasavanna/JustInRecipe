@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">JustInRecipes</string>
+    <string name="recipe_name">Palav</string>
+    <string name="food_image">Image of the food</string>
+    <string name="title_activity_recipe_details">RecipeDetails</string>
+    <string name="action_settings">Settings</string>
+    <string name="prev_button">Previous</string>
+    <string name="next_button">Next</string>
+    <string name="recipes_list">Recipes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>
